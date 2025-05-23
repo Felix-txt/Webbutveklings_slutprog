@@ -16,7 +16,7 @@
 .tag1{
     padding-bottom: 20px;
 }
-.player--active{
+.player--inactiv{
     display: flex;
     align-content: center;
     flex-direction: column;
@@ -24,7 +24,7 @@
     width: 400px;
     padding-left: 140px;
 }
-.player{
+.player--active{
     display: flex;
     align-content: center;
     background-color: lightgray;
