@@ -1,0 +1,45 @@
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tärningsspel</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ljudfilen läggs till i head -->
+<audio id="backgroundMusic" loop>
+    <source src="807675__cvltiv8r__perc-beat-4.wav" type="audio/WAV">
+    Din webbläsare stödjer inte ljudet.
+</audio>
+
+<!-- Knapp för musik i början av body -->
+<button id="musicToggle" class="music-btn">Stäng av musik</button>
+</head>
+<body>
+    <div class="mark" id="markor"></div>
+    <div class="spel_container">
+        <h1 class="tag1">Tärningsspel</h1>
+    
+        <div class="player--active" id="player-1">
+            <h1>Spelare 1</h1>
+            <h2>Total score</h2>
+            <p class="total-score" id="score-1">0</p>
+            <h2>Current score</h2>
+            <p class="current-score" id="current-1">0</p>
+        </div>
+        <br>
+        <div class="controls">
+            <button class="btn" id="rull-btn">Kasta tärningen</button>
+            <button class="btn" id="spara-btn">Spara score</button>
+            <button class="btn" id="ny-btn">Nytt spel</button>
+        </div>
+        <br>
+        <div class="player--inactiv" id="player-2">
+            <h1>Spelare 2</h1>
+            <h2>Total score</h2>
+            <p class="total-score" id="score-2">0</p>
+            <h2>Current score</h2>
+            <p class="current-score" id="current-2">0</p>
+        </div>
+    </div>
+    <script src="kode.js"></script>
+</body>
+</html>
