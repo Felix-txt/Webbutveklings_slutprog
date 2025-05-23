@@ -8,7 +8,7 @@ let totalscore1 = 0;
 let totalscore2 = 0;
 
 startspelare = player1;
-function bytspelare() {
+function bytspelare() { // Här är funktionen för att byta spelare och den även byter förgen här för vilket spelare det är som börjar
     startspelare = startspelare === player1 ? player2 : player1;
     if (startspelare === player2) {
         document.getElementById('player-2').classList.remove('player--inactiv');
