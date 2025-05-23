@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     align-content: center;
-  }
+}
+
 .spel_container{
     display: flex;
     align-items: center;
@@ -13,9 +14,11 @@
     padding: 30px;
     margin-left: 37%;
 }
+
 .tag1{
     padding-bottom: 20px;
 }
+
 .player--inactiv{
     display: flex;
     align-content: center;
@@ -23,7 +26,9 @@
     background-color: gray;
     width: 400px;
     padding-left: 140px;
+    opacity: 0.6; /* Lagt till opacity för bättre visuell skillnad */
 }
+
 .player--active{
     display: flex;
     align-content: center;
@@ -32,6 +37,33 @@
     flex-direction: column;
     padding-left: 140px;
 }
+
 .total-score, .current-score{
     padding-left: 50px;
+}
+
+/* Lagt till styling för tärningsvisningen */
+#markor {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Stilar för musik-knappen */
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.music-btn:hover {
+    background-color: #45a049;
 }
